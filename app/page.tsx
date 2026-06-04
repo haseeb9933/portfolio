@@ -127,19 +127,6 @@ export default function Home() {
               {/* base fade so the torso melts into the panel */}
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-night2 to-transparent" />
             </div>
-
-            <div className="absolute left-2 top-4 flex animate-floaty items-center gap-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-left-5 sm:top-10 sm:px-3 sm:py-2">
-              <span className="h-2 w-2 animate-pulseDot rounded-full bg-emerald-400" />
-              <span className="font-mono text-[11px] font-semibold text-white sm:text-xs">Open to work</span>
-            </div>
-            <div className="absolute bottom-14 right-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-right-4 sm:bottom-24 sm:px-3 sm:py-2">
-              <div className="grad-text font-mono text-base font-bold leading-none sm:text-lg">100+</div>
-              <div className="mt-0.5 text-[10px] text-slate-400 sm:text-[11px]">systems shipped</div>
-            </div>
-            <div className="absolute bottom-2 left-3 flex items-center gap-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-bottom-4 sm:left-6 sm:px-3 sm:py-2">
-              <span className="h-2 w-2 rounded-full bg-gradient-to-r from-iris to-fuchsia" />
-              <div className="font-mono text-[11px] font-semibold text-white sm:text-xs">Agents · RAG · Bots</div>
-            </div>
           </div>
         </div>
       </section>
