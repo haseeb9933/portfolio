@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2307070c'/><text x='50' y='71' font-size='52' font-family='monospace' font-weight='700' fill='%23c084fc' text-anchor='middle'>~</text></svg>",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2307070c'/><text x='50' y='72' font-size='56' font-family='sans-serif' font-weight='800' fill='%2338bdf8' text-anchor='middle'>H</text></svg>",
   },
 };
 

@@ -26,22 +26,22 @@ body {
 
 /* ── Neon gradient text (for dark bg) ── */
 .grad-text {
-  background-image: linear-gradient(115deg, #818cf8 0%, #c084fc 45%, #f472b6 100%);
+  background-image: linear-gradient(115deg, #22d3ee 0%, #38bdf8 45%, #3b82f6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .grad-btn {
-  background-image: linear-gradient(115deg, #6d28d9 0%, #9333ea 55%, #db2777 120%);
+  background-image: linear-gradient(115deg, #0891b2 0%, #0ea5e9 55%, #2563eb 120%);
   background-size: 160% 160%;
   transition: background-position 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 .grad-btn:hover {
   background-position: 100% 0;
   transform: translateY(-2px) scale(1.025);
-  box-shadow: 0 14px 34px -10px rgba(124, 58, 237, 0.65);
+  box-shadow: 0 14px 34px -10px rgba(2, 132, 199, 0.6);
 }
-.grad-ring { background-image: linear-gradient(140deg, #818cf8, #c084fc, #f472b6); }
+.grad-ring { background-image: linear-gradient(140deg, #22d3ee, #38bdf8, #3b82f6); }
 
 /* ── Glassmorphism ── */
 .glass {
@@ -59,16 +59,16 @@ body {
 }
 .glass-hover:hover {
   background: rgba(255, 255, 255, 0.10);
-  border-color: rgba(168, 139, 250, 0.6);
+  border-color: rgba(56, 189, 248, 0.6);
   transform: translateY(-7px) scale(1.015);
-  box-shadow: 0 34px 80px -26px rgba(124, 58, 237, 0.7);
+  box-shadow: 0 34px 80px -26px rgba(2, 132, 199, 0.6);
 }
 /* gradient-outlined glass card */
 .grad-border {
   border: 1px solid transparent;
   background:
     linear-gradient(#0c0c15, #0c0c15) padding-box,
-    linear-gradient(135deg, #818cf8, #c084fc, #f472b6) border-box;
+    linear-gradient(135deg, #22d3ee, #38bdf8, #3b82f6) border-box;
 }
 
 /* ── Aurora blobs ── */
@@ -102,12 +102,12 @@ body {
   background-size: 52px 52px;
 }
 
-::selection { background: rgba(168, 139, 250, 0.3); color: #fff; }
+::selection { background: rgba(56, 189, 248, 0.3); color: #fff; }
 
 ::-webkit-scrollbar { width: 11px; }
 ::-webkit-scrollbar-track { background: #0b0b14; }
 ::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 8px; border: 3px solid #0b0b14; }
-::-webkit-scrollbar-thumb:hover { background: #7c3aed; }
+::-webkit-scrollbar-thumb:hover { background: #0ea5e9; }
 
 /* ── Smooth animation layer ────────────────────────────── */
 
@@ -139,7 +139,7 @@ body {
 .navlink { position: relative; }
 .navlink::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 1.5px;
-  background: linear-gradient(90deg, #818cf8, #f472b6);
+  background: linear-gradient(90deg, #22d3ee, #3b82f6);
   transform: scaleX(0); transform-origin: left;
   transition: transform .3s cubic-bezier(.22, 1, .36, 1);
 }
@@ -149,8 +149,8 @@ body {
 .glow-card::after {
   content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 0;
   background:
-    radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(168, 139, 250, .16), transparent 62%),
-    radial-gradient(140px circle at var(--mx, 50%) var(--my, 50%), rgba(244, 114, 182, .10), transparent 68%);
+    radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(56, 189, 248, .16), transparent 62%),
+    radial-gradient(140px circle at var(--mx, 50%) var(--my, 50%), rgba(34, 211, 238, .10), transparent 68%);
   opacity: 0; transition: opacity .4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .glow-card:hover::after { opacity: 1; }

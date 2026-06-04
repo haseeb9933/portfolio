@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "@/lib/data";
 
-const accents = ["#a78bfa", "#c084fc", "#f472b6", "#38bdf8", "#fbbf24", "#34d399", "#fb7185"];
+const accents = ["#38bdf8", "#22d3ee", "#0ea5e9", "#60a5fa", "#2dd4bf", "#7dd3fc", "#818cf8"];
 
 export default function ProjectSlider() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -151,7 +151,7 @@ export default function ProjectSlider() {
               className="h-2 cursor-pointer rounded-full transition-all duration-300"
               style={{
                 width: active === i ? 26 : 8,
-                background: active === i ? "linear-gradient(90deg,#818cf8,#f472b6)" : "rgba(255,255,255,0.2)",
+                background: active === i ? "linear-gradient(90deg,#22d3ee,#3b82f6)" : "rgba(255,255,255,0.2)",
               }}
             />
           ))}

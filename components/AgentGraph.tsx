@@ -8,8 +8,8 @@ function Node({
     <g>
       <rect
         x={x} y={y} width={w} height={h} rx={11}
-        fill={primary ? "rgba(124,58,237,0.18)" : "rgba(255,255,255,0.04)"}
-        stroke={primary ? "#a78bfa" : "rgba(255,255,255,0.18)"}
+        fill={primary ? "rgba(14,165,233,0.18)" : "rgba(255,255,255,0.04)"}
+        stroke={primary ? "#38bdf8" : "rgba(255,255,255,0.18)"}
         strokeWidth={primary ? 1.6 : 1.2}
       />
       <text
@@ -18,7 +18,7 @@ function Node({
         fontFamily="var(--font-mono), monospace"
         fontSize={primary ? 14 : 12.5}
         fontWeight={primary ? 700 : 500}
-        fill={primary ? "#c4b5fd" : "#cbd5e1"}
+        fill={primary ? "#7dd3fc" : "#cbd5e1"}
       >
         {label}
       </text>
@@ -48,14 +48,14 @@ export default function AgentGraph() {
         </defs>
         <rect x="0" y="0" width="520" height="360" fill="url(#dots)" />
 
-        <g fill="none" stroke="#a78bfa" strokeWidth="1.6" strokeOpacity="0.7">
+        <g fill="none" stroke="#38bdf8" strokeWidth="1.6" strokeOpacity="0.7">
           <path className="flow-line" d="M 128 172 H 206" />
           <path className="flow-line" d="M 334 158 C 372 120, 384 98, 404 86" />
           <path className="flow-line" d="M 336 174 H 404" />
           <path className="flow-line" d="M 334 188 C 372 226, 384 248, 404 262" />
         </g>
 
-        <g fill="#c084fc">
+        <g fill="#22d3ee">
           <circle cx="404" cy="86" r="3.2" className="animate-nodepulse" />
           <circle cx="404" cy="174" r="3.2" className="animate-nodepulse" style={{ animationDelay: "0.5s" }} />
           <circle cx="404" cy="262" r="3.2" className="animate-nodepulse" style={{ animationDelay: "1s" }} />

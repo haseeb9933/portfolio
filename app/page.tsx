@@ -13,7 +13,7 @@ const marquee = [
   "PostgreSQL", "Docker", "AWS", "Twilio", "ElevenLabs", "RAG",
 ];
 
-const skillAccents = ["#a78bfa", "#f472b6", "#38bdf8", "#34d399", "#c084fc", "#fbbf24"];
+const skillAccents = ["#38bdf8", "#22d3ee", "#0ea5e9", "#2dd4bf", "#60a5fa", "#7dd3fc"];
 
 const process = [
   { n: "01", title: "Scope", desc: "We pin down the real problem, success criteria, and constraints — no scope creep, no guesswork." },
@@ -114,7 +114,7 @@ export default function Home() {
           {/* photo */}
           <div className="enter-pop relative mx-auto w-full max-w-sm">
             <div className="aurora -inset-6 h-full w-full bg-fuchsia/30" />
-            <div className="grad-ring relative rounded-[30px] p-[1.5px] shadow-[0_40px_90px_-30px_rgba(124,58,237,0.6)]">
+            <div className="grad-ring relative rounded-[30px] p-[1.5px] shadow-[0_40px_90px_-30px_rgba(2,132,199,0.55)]">
               <div className="overflow-hidden rounded-[28px] bg-night2">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
