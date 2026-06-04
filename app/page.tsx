@@ -51,9 +51,9 @@ function Eyebrow({ n, label }: { n: string; label: string }) {
 
 function SectionTitle({ n, label, title }: { n: string; label: string; title: string }) {
   return (
-    <Reveal className="mb-12 max-w-2xl">
+    <Reveal className="mb-9 max-w-2xl sm:mb-14">
       <Eyebrow n={n} label={label} />
-      <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-[2.5rem] sm:leading-[1.1]">
+      <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-white sm:mt-4 sm:text-[2.5rem] sm:leading-[1.1]">
         {title}
       </h2>
     </Reveal>
@@ -62,7 +62,7 @@ function SectionTitle({ n, label, title }: { n: string; label: string; title: st
 
 export default function Home() {
   return (
-    <main className="relative bg-night">
+    <main className="grain relative bg-night">
       <PointerGlow />
       {/* ───────── FLOATING NAV ───────── */}
       <Nav />
@@ -74,7 +74,7 @@ export default function Home() {
         <div className="aurora bottom-[-18%] left-[32%] h-80 w-80 bg-iris opacity-50" />
         <div className="pointer-events-none absolute inset-0 line-grid [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,black,transparent)]" />
 
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-36 lg:grid-cols-[1.05fr_0.95fr] lg:pt-40">
+        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 pb-16 pt-28 sm:gap-12 sm:pb-24 sm:pt-36 lg:grid-cols-[1.05fr_0.95fr] lg:pt-40">
           <div className="stagger">
             <div className="glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 font-mono text-xs text-slate-300">
               <span className="h-1.5 w-1.5 animate-pulseDot rounded-full bg-emerald-400" />
@@ -85,7 +85,7 @@ export default function Home() {
             <h1 className="mt-4 font-display text-[1.9rem] font-extrabold leading-[1.08] tracking-tight text-white min-[420px]:text-[2.3rem] sm:text-[3.4rem] sm:leading-[1.05]">
               I build AI systems &amp;<br /><span className="grad-text">automation bots.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">{profile.tagline}</p>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-400 sm:mt-6 sm:text-lg">{profile.tagline}</p>
 
             <div className="mt-7 flex flex-wrap gap-2">
               {["LangGraph", "OpenAI", "Selenium", "Playwright", "Puppeteer", "n8n"].map((t) => (
@@ -112,18 +112,19 @@ export default function Home() {
           </div>
 
           {/* photo */}
-          <div className="enter-pop relative mx-auto w-full max-w-sm">
-            <div className="aurora -inset-6 h-full w-full bg-fuchsia/30" />
-            <div className="grad-ring relative rounded-[30px] p-[1.5px] shadow-[0_40px_90px_-30px_rgba(2,132,199,0.55)]">
-              <div className="overflow-hidden rounded-[28px] bg-night2">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/haseeb.jpg"
-                  alt="Haseeb Tariq, AI &amp; Automation Engineer"
-                  className="aspect-[4/5] w-full object-cover"
-                  style={{ objectPosition: "50% 18%" }}
-                />
-              </div>
+          <div className="enter-pop relative mx-auto w-full max-w-[15rem] sm:max-w-sm">
+            <div className="aurora -inset-8 h-full w-full bg-iris/25" />
+            <div className="relative">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/haseeb.jpg"
+                alt="Haseeb Tariq, AI &amp; Automation Engineer"
+                className="photo-blend aspect-[4/5] w-full object-cover"
+                style={{ objectPosition: "50% 16%" }}
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-night via-night/30 to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-night/40 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 bg-iris/10 mix-blend-overlay" />
             </div>
 
             <div className="absolute left-2 top-4 flex animate-floaty items-center gap-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-left-5 sm:top-10 sm:px-3 sm:py-2">
@@ -157,8 +158,8 @@ export default function Home() {
       <section className="border-b border-white/5">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-6 py-12 md:grid-cols-4">
           {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 90} className="glass rounded-2xl px-6 py-7">
-              <div className="grad-text font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
+            <Reveal key={s.label} delay={i * 90} className="glass rounded-2xl px-5 py-6 sm:px-6 sm:py-7">
+              <div className="grad-text font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
                 <CountUp to={s.to} suffix={s.suffix} />
               </div>
               <div className="mt-2 text-sm leading-snug text-slate-400">{s.label}</div>
@@ -170,7 +171,7 @@ export default function Home() {
       {/* ───────── SKILLS (prominent) ───────── */}
       <section id="skills" className="relative overflow-hidden">
         <div className="aurora left-[-8%] top-[20%] h-72 w-72 bg-iris opacity-30" />
-        <div className="relative mx-auto max-w-6xl px-6 py-24">
+        <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-24">
           <SectionTitle n="01" label="Capabilities" title="A full toolkit — from agents to browser bots." />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((s, i) => {
@@ -202,14 +203,14 @@ export default function Home() {
       {/* ───────── WORK (prominent slider) ───────── */}
       <section id="work" className="relative overflow-hidden border-y border-white/5 bg-night2">
         <div className="aurora right-[-8%] top-[10%] h-80 w-80 bg-fuchsia opacity-25" />
-        <div className="relative mx-auto max-w-6xl px-6 py-24">
+        <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-24">
           <SectionTitle n="02" label="Selected Work" title="Systems &amp; bots I've shipped." />
           <Reveal><ProjectSlider /></Reveal>
         </div>
       </section>
 
       {/* ───────── SERVICES ───────── */}
-      <section id="services" className="relative mx-auto max-w-6xl px-6 py-24">
+      <section id="services" className="relative mx-auto max-w-6xl px-6 py-16 sm:py-24">
         <SectionTitle n="03" label="Services" title="How I can help you." />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
@@ -238,7 +239,7 @@ export default function Home() {
 
       {/* ───────── PROCESS (new) ───────── */}
       <section id="process" className="border-y border-white/5 bg-night2">
-        <div className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
           <SectionTitle n="04" label="Process" title="How I work." />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {process.map((p, i) => (
@@ -255,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* ───────── ABOUT + AGENT GRAPH ───────── */}
-      <section id="about" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="about" className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
         <SectionTitle n="05" label="About" title="An engineer who ships, not a demo-maker." />
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <Reveal>
@@ -275,13 +276,13 @@ export default function Home() {
         <div className="aurora left-[12%] top-[-10%] h-80 w-80 bg-iris opacity-50" />
         <div className="aurora right-[10%] top-[-6%] h-80 w-[22rem] bg-fuchsia opacity-40" />
         <div className="pointer-events-none absolute inset-0 opacity-[0.05] dot-grid" />
-        <div className="relative mx-auto max-w-3xl px-6 py-28 text-center">
+        <div className="relative mx-auto max-w-3xl px-6 py-20 text-center sm:py-28">
           <Reveal>
             <Eyebrow n="06" label="Contact" />
-            <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            <h2 className="mt-5 font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl">
               Let&apos;s build <span className="grad-text">something.</span>
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-400">
+            <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
               Got an AI feature, an agent, or an automation in mind? Tell me the
               problem — I&apos;ll tell you straight whether I&apos;m the right fit.
             </p>

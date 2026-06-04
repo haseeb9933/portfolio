@@ -76,7 +76,7 @@ export default function ProjectSlider() {
               className="glass glass-hover glow-card group flex min-w-[86%] flex-[0_0_86%] snap-start flex-col overflow-hidden rounded-2xl sm:min-w-[48%] sm:flex-[0_0_48%] lg:min-w-[31.5%] lg:flex-[0_0_31.5%]"
             >
               <div className="h-1.5 w-full" style={{ background: `linear-gradient(90deg, ${accent}, ${accent}44)` }} />
-              <div className="flex flex-1 flex-col p-7">
+              <div className="flex flex-1 flex-col p-5 sm:p-7">
                 <div className="flex items-center justify-between gap-3">
                   <span
                     className="rounded-full px-2.5 py-1 text-xs font-semibold"
