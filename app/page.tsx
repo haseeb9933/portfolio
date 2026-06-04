@@ -113,15 +113,20 @@ export default function Home() {
 
           {/* photo */}
           <div className="enter-pop relative mx-auto w-full max-w-[15rem] sm:max-w-sm">
-            {/* glow behind the cutout */}
-            <div className="aurora absolute left-1/2 top-[16%] h-[80%] w-[86%] -translate-x-1/2 bg-iris/30" />
-            <div className="pointer-events-none absolute inset-x-4 bottom-0 top-1/3 rounded-[50%] bg-gradient-to-t from-iris/20 to-transparent blur-2xl" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/haseeb-cutout.png"
-              alt="Haseeb Tariq, AI &amp; Automation Engineer"
-              className="relative z-[1] w-full [filter:drop-shadow(0_24px_50px_rgba(0,0,0,0.55))] [mask-image:linear-gradient(to_bottom,black_85%,transparent)]"
-            />
+            <div className="aurora absolute -inset-5 bg-iris/20" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-night2 to-night shadow-2xl">
+              {/* designed backdrop behind the cutout */}
+              <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_50%_16%,rgba(56,189,248,0.22),transparent_62%)]" />
+              <div className="absolute inset-0 line-grid opacity-30 [mask-image:radial-gradient(ellipse_70%_70%_at_50%_30%,black,transparent)]" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/haseeb-cutout.png"
+                alt="Haseeb Tariq, AI &amp; Automation Engineer"
+                className="absolute bottom-0 left-1/2 h-[112%] w-auto max-w-none -translate-x-1/2 [filter:drop-shadow(0_10px_28px_rgba(0,0,0,0.5))]"
+              />
+              {/* base fade so the torso melts into the panel */}
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-night2 to-transparent" />
+            </div>
 
             <div className="absolute left-2 top-4 flex animate-floaty items-center gap-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-left-5 sm:top-10 sm:px-3 sm:py-2">
               <span className="h-2 w-2 animate-pulseDot rounded-full bg-emerald-400" />
