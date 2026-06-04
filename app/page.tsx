@@ -120,9 +120,9 @@ export default function Home() {
               <div className="absolute inset-0 line-grid opacity-30 [mask-image:radial-gradient(ellipse_70%_70%_at_50%_30%,black,transparent)]" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/haseeb-cutout.png"
+                src="/haseeb-cutout.webp"
                 alt="Haseeb Tariq, AI &amp; Automation Engineer"
-                className="absolute bottom-0 left-1/2 h-[112%] w-auto max-w-none -translate-x-1/2 [filter:drop-shadow(0_10px_28px_rgba(0,0,0,0.5))]"
+                className="absolute inset-0 h-full w-full object-cover object-top [filter:drop-shadow(0_10px_28px_rgba(0,0,0,0.45))]"
               />
               {/* base fade so the torso melts into the panel */}
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-night2 to-transparent" />
