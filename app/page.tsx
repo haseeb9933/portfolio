@@ -113,19 +113,15 @@ export default function Home() {
 
           {/* photo */}
           <div className="enter-pop relative mx-auto w-full max-w-[15rem] sm:max-w-sm">
-            <div className="aurora -inset-8 h-full w-full bg-iris/25" />
-            <div className="relative">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/haseeb.jpg"
-                alt="Haseeb Tariq, AI &amp; Automation Engineer"
-                className="photo-blend aspect-[4/5] w-full object-cover"
-                style={{ objectPosition: "50% 16%" }}
-              />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-night via-night/30 to-transparent" />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-night/40 via-transparent to-transparent" />
-              <div className="pointer-events-none absolute inset-0 bg-iris/10 mix-blend-overlay" />
-            </div>
+            {/* glow behind the cutout */}
+            <div className="aurora absolute left-1/2 top-[16%] h-[80%] w-[86%] -translate-x-1/2 bg-iris/30" />
+            <div className="pointer-events-none absolute inset-x-4 bottom-0 top-1/3 rounded-[50%] bg-gradient-to-t from-iris/20 to-transparent blur-2xl" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/haseeb-cutout.png"
+              alt="Haseeb Tariq, AI &amp; Automation Engineer"
+              className="relative z-[1] w-full [filter:drop-shadow(0_24px_50px_rgba(0,0,0,0.55))] [mask-image:linear-gradient(to_bottom,black_85%,transparent)]"
+            />
 
             <div className="absolute left-2 top-4 flex animate-floaty items-center gap-2 rounded-xl border border-white/10 bg-night2/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md sm:-left-5 sm:top-10 sm:px-3 sm:py-2">
               <span className="h-2 w-2 animate-pulseDot rounded-full bg-emerald-400" />
