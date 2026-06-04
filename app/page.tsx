@@ -83,7 +83,7 @@ export default function Home() {
 
             <p className="mt-7 font-mono text-sm font-medium uppercase tracking-[0.18em] text-violet-300">// {profile.role}</p>
             <h1 className="mt-4 font-display text-[1.9rem] font-extrabold leading-[1.08] tracking-tight text-white min-[420px]:text-[2.3rem] sm:text-[3.4rem] sm:leading-[1.05]">
-              I build AI systems &amp;<br /><span className="grad-text">automation bots.</span>
+              I build AI systems &amp;<br /><span className="grad-text">automations.</span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-400 sm:mt-6 sm:text-lg">{profile.tagline}</p>
 

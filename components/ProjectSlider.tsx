@@ -89,11 +89,11 @@ export default function ProjectSlider() {
                     {p.code && <a href={p.code} target="_blank" rel="noreferrer" className="cursor-pointer text-slate-400 transition-colors duration-200 hover:text-white">Code ↗</a>}
                   </div>
                 </div>
-                <h3 className="mt-4 font-display text-xl font-bold tracking-tight text-white">{p.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-400">{p.blurb}</p>
-                <ul className="mt-4 space-y-2.5">
+                <h3 className="mt-3 font-display text-lg font-bold tracking-tight text-white sm:mt-4 sm:text-xl">{p.name}</h3>
+                <p className="mt-2 text-[13px] leading-relaxed text-slate-400 sm:text-sm">{p.blurb}</p>
+                <ul className="mt-3.5 space-y-2 sm:mt-4 sm:space-y-2.5">
                   {p.points.map((pt, j) => (
-                    <li key={j} className="flex gap-3 text-[14px] leading-relaxed text-slate-300">
+                    <li key={j} className="flex gap-2.5 text-[12.5px] leading-relaxed text-slate-300 sm:gap-3 sm:text-[14px]">
                       <span className="mt-[7px] h-1.5 w-1.5 flex-none rounded-full" style={{ backgroundColor: accent }} />
                       <span>{pt}</span>
                     </li>

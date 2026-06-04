@@ -30,3 +30,6 @@ next-env.d.ts
 # vercel
 .vercel
 design_samples.html
+explore_mockups.html
+explore_terminal.html
+terminal_mockup.html
