@@ -112,7 +112,7 @@ export default function Home() {
           </div>
 
           {/* photo */}
-          <div className="enter-pop relative mx-auto w-full max-w-[15rem] sm:max-w-sm">
+          <div className="enter-pop relative mx-auto w-full max-w-[13rem] sm:max-w-[19.5rem]">
             <div className="aurora absolute -inset-5 bg-iris/20" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-night2 to-night shadow-2xl">
               {/* designed backdrop behind the cutout */}
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="absolute inset-0 line-grid opacity-30 [mask-image:radial-gradient(ellipse_70%_70%_at_50%_30%,black,transparent)]" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/haseeb-cutout.webp?v=4"
+                src="/haseeb-cutout.webp?v=7"
                 alt="Haseeb Tariq, AI &amp; Automation Engineer"
                 className="absolute inset-0 h-full w-full object-cover object-top [filter:drop-shadow(0_10px_28px_rgba(0,0,0,0.45))]"
               />
